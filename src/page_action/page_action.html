@@ -1,0 +1,42 @@
+<!doctype html>
+<style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 150px;
+		width: 200px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+		font-family: monospace;
+		color: #ff6534;
+	}
+.button-ad {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button-ad:hover {background-color: #3e8e41}
+
+.button-ad:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+<div id="mainPopup">
+<h1>Ad Remover</h1>
+<button class="button-ad" id="remove-ad">Remove Ads</button>
+<script src="page_action.js"></script>
+</div>

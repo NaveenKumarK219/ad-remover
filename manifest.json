@@ -1,0 +1,42 @@
+{
+  "name": "Ad Remover",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Extension to remove ads from a page.",
+  "homepage_url": "https://github.com/NaveenKumarK219",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Ad Remover Action",
+    "default_popup": "src/page_action/page_action.html"
+  },
+  "permissions": [
+    "notifications",
+    "tabs",
+    "https://*/* ",
+    "http://*/* ",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js",
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
