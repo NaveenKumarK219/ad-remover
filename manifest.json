@@ -31,11 +31,14 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*/*"
+        "*://*/*"
       ],
       "js": [
         "js/jquery/jquery.min.js",
         "src/inject/inject.js"
+      ],
+      "css": [
+      	"css/ad-remover-text.css"
       ]
     }
   ]
