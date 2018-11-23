@@ -1,8 +1,8 @@
 {
   "name": "Ad Remover",
-  "version": "1.0",
+  "version": "2.0",
   "manifest_version": 2,
-  "description": "Extension to remove ads from a page.",
+  "description": "Extension to remove ads in a webpage.",
   "homepage_url": "https://github.com/NaveenKumarK219",
   "icons": {
     "16": "icons/icon16.png",
@@ -38,7 +38,7 @@
         "src/inject/inject.js"
       ],
       "css": [
-      	"css/ad-remover-text.css"
+      	"css/ad-remover-theme.css"
       ]
     }
   ]
