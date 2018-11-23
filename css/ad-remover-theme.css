@@ -49,7 +49,7 @@
 }
 
 .Ndiv-inline{
-  display:inline-block;
+  
   overflow:hidden;
   white-space:nowrap;
 }
@@ -84,9 +84,9 @@
 @keyframes reveal {
     0% {opacity:0;width:0%;}
     20% {opacity:1;width:0%;}
-    30% {width:15%;}
+    30% {width:100%;}
     80% {opacity:1;}
-    100% {opacity:0;width:15%;}
+    100% {opacity:0;width:100%;}
 }
 
 
